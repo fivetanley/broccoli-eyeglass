@@ -1011,7 +1011,7 @@ describe("EyeglassCompiler", function () {
         });
     });
 
-    it.only("invalidates when eyeglass modules javascript files changes (package.json).", function() {
+    it("invalidates when eyeglass modules javascript files changes (package.json).", function() {
       var projectDir = makeFixtures("projectDir.tmp", {
         "project.scss":
           ".foo { content: foo(); }\n"
